@@ -1,0 +1,5 @@
+﻿  Structs.cpp
+  Zadanie N19 - Point in the Plane.cpp
+  Generating Code...
+Zadanie N19 - Point in the Plane.obj : error LNK2019: unresolved external symbol "public: __thiscall Region::Region(void)" (??0Region@@QAE@XZ) referenced in function "public: __thiscall RegionArray::RegionArray(void)" (??0RegionArray@@QAE@XZ)
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Debug\Zadanie N19 - Point in the Plane.exe : fatal error LNK1120: 1 unresolved externals
