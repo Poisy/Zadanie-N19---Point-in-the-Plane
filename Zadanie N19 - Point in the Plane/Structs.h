@@ -12,7 +12,6 @@ struct Region
 	Region(int sx, int sy, int ex, int ey);
 	Region();
 };
-
 struct Point
 {
 	//Properties
@@ -21,16 +20,17 @@ struct Point
 	//Constructor
 	Point(int x, int y);
 	//Methods
-	void CheckIfInRegion(Region reg);
-}; 
-
+	void CheckIfInRegion(RegionArray regar);
+};
 struct RegionArray
 {
 	//Properties
 	Region AllRegions[10];
-	int RegionCounter;
+	int RegionCounter = 0;
+	//Constructor
+	RegionArray(Region& reg);
+	RegionArray();
 	//Methods
-	void Add(Region reg);
+	void Add(Region* reg);
 	Region* ReturnAllRegions();
 };
-

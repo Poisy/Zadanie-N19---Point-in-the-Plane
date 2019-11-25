@@ -1,5 +1,31 @@
 ﻿  Structs.cpp
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.h(23,35): error C2061:  syntax error: identifier 'RegionArray'
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(52,1): error C2511:  'void Point::CheckIfInRegion(RegionArray)': overloaded member function not found in 'Point'
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.h(15): message :  see declaration of 'Point'
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(55,2): error C3875:  call of non-static member function missing argument list
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(55,2): error C3312:  no callable 'begin' function found for type 'Region *(void)'
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(55,2): error C3312:  no callable 'end' function found for type 'Region *(void)'
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(56,16): error C2065:  'reg': undeclared identifier
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(56,63): error C2062:  type 'int' unexpected
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(56,63): error C2143:  syntax error: missing ')' before ';'
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(56,69): error C2065:  'reg': undeclared identifier
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(56,81): error C2065:  'y': undeclared identifier
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(56,85): error C2065:  'reg': undeclared identifier
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(56,100): error C2065:  'y': undeclared identifier
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(56,105): error C2065:  'counter': undeclared identifier
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(56,114): error C2059:  syntax error: ')'
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(58,4): error C2059:  syntax error: 'if'
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(59,4): error C2143:  syntax error: missing ';' before '{'
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(60,57): error C2671:  'Point::CheckIfInRegion': static member functions do not have 'this' pointers
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(60,66): error C2671:  'Point::CheckIfInRegion': static member functions do not have 'this' pointers
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(60,75): error C2065:  'counter': undeclared identifier
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(65,2): error C2059:  syntax error: 'if'
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(66,2): error C2143:  syntax error: missing ';' before '{'
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(66,2): error C2447:  '{': missing function header (old-style formal list?)
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(69,1): error C2059:  syntax error: '}'
   Zadanie N19 - Point in the Plane.cpp
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.cpp(69,1): error C2143:  syntax error: missing ';' before '}'
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.h(23,35): error C2061:  syntax error: identifier 'RegionArray'
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane.cpp(17,28): error C2660:  'Point::CheckIfInRegion': function does not take 1 arguments
   Generating Code...
-Zadanie N19 - Point in the Plane.obj : error LNK2019: unresolved external symbol "public: __thiscall Region::Region(void)" (??0Region@@QAE@XZ) referenced in function "public: __thiscall RegionArray::RegionArray(void)" (??0RegionArray@@QAE@XZ)
-C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Debug\Zadanie N19 - Point in the Plane.exe : fatal error LNK1120: 1 unresolved externals
+C:\Users\atana\source\repos\Zadanie N19 - Point in the Plane\Zadanie N19 - Point in the Plane\Structs.h(23,7): message :  see declaration of 'Point::CheckIfInRegion'
