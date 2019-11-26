@@ -1,5 +1,6 @@
 #include "Structs.h"
 #include "stdio.h"
+#include "math.h"
 
 //Constructors
 Point::Point(int x, int y)
@@ -32,34 +33,35 @@ Region::Region(int sx, int sy, int ex, int ey)
 RegionArray::RegionArray()
 {
 }
-RegionArray::RegionArray(Region& reg)
+RegionArray::RegionArray(Region reg)
 {
 	this->AllRegions[this->RegionCounter] = reg;
 	this->RegionCounter++;
 }
 
 //Methods
-Region* RegionArray::ReturnAllRegions()
+void RegionArray::Add(Region reg)
 {
-	return this->AllRegions;
-}
-void RegionArray::Add(Region* reg)
-{
-	this->AllRegions[this->RegionCounter] = *reg;
+	this->AllRegions[this->RegionCounter] = reg;
 	this->RegionCounter++;
 }
-void Point::CheckIfInRegion(RegionArray regar)
+void Point::CheckIfInRegion(Region * regar)
 {
 	bool isFoundAnywhere = false;
-	for (Region reg : regar.ReturnAllRegions)
+	Region* regarray = regar;
+	for (int i = 0; i < 10; i++)
 	{
-		for (int x = reg.StartX, int y = reg.StartY, int counter = 1; x < reg.EndX && y < reg.EndY; x++, y++, counter++)
+		Region reg = regarray[i];
+		int pX = this->X;
+		int pY = this->Y;
+		int regSX = reg.Cordinates[0];
+		int regSY = reg.Cordinates[1];
+		int regEX = reg.Cordinates[2];
+		int regEY = reg.Cordinates[3];
+		if ((pX >= regSX && pX <= regEX) && (pY >= regSY && pY <= regEY))
 		{
-			if (x == this->X && y == this->Y)
-			{
-				printf("The point (%d, %d) is in the %dst region.", this->X, this->Y, counter);
-				isFoundAnywhere = true;
-			}
+			printf("The point (%d, %d) is in the %dst region.\n", this->X, this->Y, i+1);
+			isFoundAnywhere = true;
 		}
 	}
 	if (!isFoundAnywhere)
