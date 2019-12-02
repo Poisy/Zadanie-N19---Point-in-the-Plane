@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "Zadanie N19 - Point in the Plane"
+    </assembly>
+    <members>
+        <member name="M:Point.Help">
+Summary: Print information about the object
+Params: None
+Returns: None
+
+</member>
+        <member name="M:Point.CheckIfInRegion(Region*)">
+Summary: Print in the console if the Point is found anywhere in the given Regions
+Params: Region * -&gt; array from type Region
+Returns: None
+
+</member>
+        <member name="M:Point.#ctor">
+Warning! : The object must have parameters (int X, int Y)
+
+</member>
+        <member name="M:Point.#ctor(System.Int32,System.Int32)">
+Summary: This object represent a point in the cordinate system
+Params: (int X, int Y)
+
+</member>
+        <member name="M:RegionArray.#ctor">
+Summary: This object is a array containing all Regions that are given
+Params: Region object
+
+</member>
+        <member name="M:RegionArray.#ctor(Region)">
+Summary: This object is a array containing all Regions that are given
+Params: Region object
+
+</member>
+        <member name="M:Region.#ctor">
+Warning! : The object must have parameters (int Start X, int Start Y, int End X, int End Y)
+
+</member>
+        <member name="M:Region.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+Summary: This object represent a region in shape of a quadrangular in coordinate system
+Patams: (int Start X, int Start Y, int End X, int End Y)
+
+</member>
+    </members>
+</doc>

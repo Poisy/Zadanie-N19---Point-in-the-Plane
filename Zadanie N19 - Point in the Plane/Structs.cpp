@@ -8,6 +8,11 @@ Point::Point(int x, int y)
 	this->X = x;
 	this->Y = y;
 }
+Point::Point()
+{
+	this->X = 0;
+	this->Y = 0;
+}
 Region::Region()
 {
 	this->StartX = 0;
@@ -58,7 +63,11 @@ void Point::CheckIfInRegion(Region * regar)
 		int regSY = reg.Cordinates[1];
 		int regEX = reg.Cordinates[2];
 		int regEY = reg.Cordinates[3];
-		if ((pX >= regSX && pX <= regEX) && (pY >= regSY && pY <= regEY))
+		if (!(regSX && regSY && regEX && regEY)) continue;
+		if ((pX >= regSX && pX <= regEX) && (pY >= regSY && pY <= regEY) ||
+			(pX <= regSX && pX >= regEX) && (pY <= regSY && pY >= regEY) || 
+			(pX <= regSX && pX >= regEX) && (pY >= regSY && pY <= regEY) || 
+			(pX >= regSX && pX <= regEX) && (pY >= regSY && pY >= regEY))
 		{
 			printf("The point (%d, %d) is in the %dst region.\n", this->X, this->Y, i+1);
 			isFoundAnywhere = true;
@@ -68,4 +77,12 @@ void Point::CheckIfInRegion(Region * regar)
 	{
 		printf("The point (%d, %d) is not found in any region.", this->X, this->Y);
 	}
+}
+void Point::Help()
+{
+	printf("Step 1: Create the Point object\n\\
+Step 2: Create Region object\n\\
+Step 3: Create RegionArray object\n\\
+Step 4: Put the Region object in the RegionArray with the method .Add()\n\\
+Step 5: Call the method .CheckIfInRegion in the Point object with parameter the RegionArray object method .AllRegions()");
 }
